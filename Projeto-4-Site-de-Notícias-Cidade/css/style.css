@@ -108,7 +108,6 @@ body.fotos #navegacao a#fotos
         width: 270px;
 	float: left;
 	margin: 0 0 20px 15px;
-	background: green;
 }
 
 /*Caixa*/
@@ -130,6 +129,70 @@ h2{
 	padding: 5px;
 	margin-top: 5px;
 }
+
+/* Menus laterais */
+label{
+	display: block;
+	cursor: pointer;
+}
+
+input{
+	padding: 5px;
+	width: 125px;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+
+input.submit{
+	width: 80px;
+	color: #fff;
+	background-color: #b10333;
+	border: 2px solid #870529;
+}
+
+#lateral ul a{
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover{
+	background: #f9f9f9 url(../img/marcador.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+
+/*Formatação das imagens*/
+img{
+	border: 2px solid #dfdfdf;
+}
+
+img.imagem-principal{
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+/*Formatação cabeçalhos*/
+h3{
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.destaque h3{
+	background: #b10333;
+	color: #fff;
+}
+
+.entrevista h3{
+        background: #de003e;
+}
+
 
 /*Rodapé*/
 #container-rodape{
