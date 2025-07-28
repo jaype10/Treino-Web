@@ -15,3 +15,6 @@ No curso são ensinados os diversos conceitos de linguagens web para que o estud
 5. Projeto Site de Notícias Cidade
 	- Site de notícias de uma cidade ficticia.
 	- Projeto com foco em práticar e fixar propriedades **CSS3** consideradas como intermediarias.
+6. Projeto Site Chalé Hotel
+	- Site/ landing page para um hotel ficticio.
+	- Projeto pessoal para práticar e fixar propriedades do **CSS3** consideradas como intermediarias e avançadas.
