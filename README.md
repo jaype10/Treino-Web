@@ -3,7 +3,7 @@ Repositório para projetos sugeridos pelo curso **"Domine Web - 20 Cursos - HTML
 No curso são ensinados os diversos conceitos de linguagens web para que o estudante tenha conhecimento sobre o desenvolvimento web, desde o front-end até o Back-end, tornando-o um profissional qualificado para o mercado de trabalho.
 
 ## PROJETOS
-1. [Primeiro projeto] (https://github.com/jaype10/Treino-Web/tree/b1096cc8a3472630c92fb3114d15f669f824a09e/Primeiro%20Projeto)
+1. Primeiro projeto
 	- Projeto de inicio do curso, utilizando-se apenas **HTML**.
 2. [Projeto-Unes](Projeto-UNES)
 	- Projeto basico de **HTML5**, o projeto foi pensado em ser uma pagina de uma faculdade fictícia chamada UNES e é o segundo projeto do curso.
