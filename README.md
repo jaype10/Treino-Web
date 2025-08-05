@@ -18,3 +18,8 @@ No curso são ensinados os diversos conceitos de linguagens web para que o estud
 6. Projeto Site Chalé Hotel
 	- Site/ landing page para um hotel ficticio.
 	- Projeto pessoal para práticar e fixar propriedades do **CSS3** consideradas como intermediarias e avançadas.
+7. Projeto Museu Nacional
+	- Site/Landing page de um museu nacional
+	- Projeto pessoal para práticar outros recursos do **CSS3** e **HTML5** não utilizadas anteriormente, como o normalize CSS, flexbox, etc...
+8. Projeto Finans
+9. Projeto Spotify	
