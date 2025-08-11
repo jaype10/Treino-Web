@@ -22,4 +22,6 @@ No curso são ensinados os diversos conceitos de linguagens web para que o estud
 	- Site/Landing page de um museu nacional
 	- Projeto pessoal para práticar outros recursos do **CSS3** e **HTML5** não utilizadas anteriormente, como o normalize CSS, flexbox, etc...
 8. [Projeto Finans](Projeto-7-Finans)
+	- Site/Landing page unica, com foco para uma empresa ficticia de finanças (Finans)
+	- Pojeto pessoal para prática e fixar conteúdos **Bootstrap** e fazer uso do **Font Awesome** ensinados no curso.
 9. Projeto Spotify	

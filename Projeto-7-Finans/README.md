@@ -1,6 +1,6 @@
 # Projeto 7 - Finans
 Projeto 7 do curso Domine Web. 
-Nesse projeto, o foco é a fixação e utilização de elementos **Bootstrap** e treinar o **Design responsivo**.
+Nesse projeto, o foco é a fixação e utilização de elementos **Bootstrap v4** e treinar o **Design responsivo**.
 A seguir alguns dos elementos utilizados do Bootstrap:
 <li>Formatação de texto</li>
 <li>Alinhamento de texto</li>
@@ -19,3 +19,5 @@ A seguir alguns dos elementos utilizados do Bootstrap:
 <li>Sistema de grid</li>
 <li>Classes do Flexbox</li>
 <li>Margin & Wrap</li>
+
+Os textos utilizados no projeto vieram do site **organizze** e foram utilizados apenas para fins educacionais.
