@@ -24,4 +24,4 @@ No curso são ensinados os diversos conceitos de linguagens web para que o estud
 8. [Projeto Finans](Projeto-7-Finans)
 	- Site/Landing page unica, com foco para uma empresa ficticia de finanças (Finans)
 	- Pojeto pessoal para prática e fixar conteúdos **Bootstrap** e fazer uso do **Font Awesome** ensinados no curso.
-9. Projeto Spotify	
+9. [Projeto Spotify](Projeto-8-Spotify)	
