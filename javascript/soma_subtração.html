@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Soma e subtração</title>
+		<script>
+			var num1 = prompt("Digite um número:")
+			var operacao = prompt("A operação é de soma ou de subtração?(digite soma/subtração")
+			var num2 = prompt("ele deve ser " + operacao +" pelo número:")
+			
+			function calc(num, num2, operacao) {
+							num1 = parseFloat(num1);
+							num2 = parseFloat(num2);
+							var resultado = 0;
+
+							if(operacao == 'soma'){
+											resultado = num1 + num2;
+										}
+							if(operacao == 'subtração'){
+											resultado = num1 - num2;
+										}
+							return resultado
+						}
+			document.write("O resultado é: " + calc(num1, num2,operacao))
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

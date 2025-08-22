@@ -41,7 +41,8 @@ No curso são ensinados os diversos conceitos de linguagens web para que o estud
 	- Foi-se utilizado uma versão do site oficial do spotify como base para a realização da prática.Esse site foi feito apenas para fins educacionais.
 ---
 ### Javascript
-10. App Calculadora
+10. [App Calculadora](App-Calculadora)
 	- Projeto inicial da sessão **Javascript** do curso.
+	- Uma calculadora basica porém funcional.
 
 11. App Game Mata Mosquito

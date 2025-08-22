@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Desafio Input</title>
+		<script>
+		
+			function modificaInput (cor) {
+							cor.style.background = "yellow";
+						}
+			function restauraCor() {
+							var valorCampo = document.getElementById('campo').value
+
+							if(valorCampo.length < 3){
+											document.getElementById('campo').style.background = "red";
+										}else{
+											document.getElementById('campo').style.background = "green";
+													}
+						}
+		</script>
+	</head>
+	<body>
+		<input type="text" onfocus="modificaInput(this)" onblur="restauraCor()" id="campo">
+	</body>
+</html>

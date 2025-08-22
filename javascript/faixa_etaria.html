@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Faixa Etária</title>
+		<script>
+			var idade = prompt("Digite sua idade")
+			var resultado
+			idade = parseInt(idade)
+
+			if (idade < 15){
+						resultado = 'Criança'
+					}
+			else if (idade >= 15 && idade < 30){
+						resultado = 'Jovem'
+					}
+			else if (idade >= 30 && idade < 60){
+						resultado = 'Adulto'
+					}
+			else{
+						resultado = 'Idoso'
+					}
+
+			document.write('Você é: ' + resultado)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
