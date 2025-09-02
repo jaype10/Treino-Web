@@ -37,12 +37,13 @@ No curso são ensinados os diversos conceitos de linguagens web para que o estud
 	- Pojeto pessoal para prática e fixar conteúdos **Bootstrap** e fazer uso do **Font Awesome** ensinados no curso.
 
 9. [Projeto Spotify](Projeto-8-Spotify)	
-	- Projeto como finalização da parte de bootstrap do curso.
+	- Projeto como finalização da parte de **bootstrap** do curso.
 	- Foi-se utilizado uma versão do site oficial do spotify como base para a realização da prática.Esse site foi feito apenas para fins educacionais.
 ---
 ### Javascript
-10. [App Calculadora](App-Calculadora)
+10. [App Calculadora](Projeto-9-App-Calculadora)
 	- Projeto inicial da sessão **Javascript** do curso.
 	- Uma calculadora basica porém funcional.
 
-11. App Game Mata Mosquito
+11. [App Game Mata Mosquito](Projeto-10-AppGame-Mata-Mosquito)
+	- Game feito em **Javascript**
