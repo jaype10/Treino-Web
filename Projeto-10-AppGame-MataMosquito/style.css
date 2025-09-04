@@ -1,7 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.clear{
+	clear: both;
+}
+
+html{
+	cursor: url(imagens/mata_mosca.png) 30 30, auto;
+}
+
 body{
 	background-image: url(imagens/bg.jpg);
 	background-repeat: no-repeat;
-	/*background-size: 100%;*/
+	background-size: 100%;
 }
 
 .mosquito1{
