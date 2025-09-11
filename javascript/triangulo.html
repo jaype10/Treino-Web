@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Triangulo</title>
+		<script>
+			let areaX = function areaTrianguloX() {
+							let a = parseInt(prompt('Digite um numero'))
+							let b = parseInt(prompt('Digite um numero'))
+							let c = parseInt(prompt('Digite um numero'))
+							let p = (a + b + c)/2
+
+							let j = p *(p - a) * (p - b) * (p - c)
+							let x = Math.sqrt(j)
+						}
+			let areaY = function areaTrianguloY() {
+							let a = parseInt(prompt('Digite um numero'))
+							let b = parseInt(prompt('Digite um numero'))
+							let c = parseInt(prompt('Digite um numero'))
+							let p = (a + b + c)/2
+							let j = p *(p - a) * (p - b) * (p - c)
+							let y = Math.sqrt(j)
+						}
+			document.write('A area do triângulo X é: ' + areaX() + '<br>')
+			document.write('A area do triângulo Y é: ' + areaY() + '<br>')
+			if(areaX() > areaY()){
+							document.write('A area de X é maior')
+						} else {
+										document.write('A area de Y é maior')
+									}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
