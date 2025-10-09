@@ -68,7 +68,7 @@ No curso são ensinados os diversos conceitos de linguagens web para que o estud
 
 11. [App Game Mata Mosquito](Projeto-10-AppGame-Mata-Mosquito)
 
-- Game feito em **Javascript**
+- Game feito em **Javascript**.
 
 ---
 
@@ -84,4 +84,8 @@ No curso são ensinados os diversos conceitos de linguagens web para que o estud
 
 13. [App Help Desk](Projeto-12-App-Help-Desk)
 
-- App para abertura e acompanhamento de suportes técnicos
+- App para abertura e acompanhamento de suportes técnicos.
+
+14. [App Send Mail](Projeto-13-App-Send-Mail)
+
+- App para envio de e-mails.
