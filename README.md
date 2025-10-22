@@ -89,3 +89,19 @@ No curso são ensinados os diversos conceitos de linguagens web para que o estud
 14. [App Send Mail](Projeto-13-App-Send-Mail)
 
 - App para envio de e-mails.
+
+---
+
+### Banco de Dados MySQL
+
+15. [Projeto Banco de Dados Loja Virtual](Projeto-14-Loja-Virtual)
+
+- Projeto feito para ser uma implementação de um banco de dados simples de uma loja virtual.
+
+---
+
+### AJAX
+
+16. [Projeto Pesquisa Endereço](Projeto-15-App-Pesquisa-Endereço)
+
+- Projeto que utiliza **HTTP REQUEST** via **XMLHttpRequest** com API's
