@@ -105,3 +105,20 @@ No curso são ensinados os diversos conceitos de linguagens web para que o estud
 16. [Projeto Pesquisa Endereço](Projeto-15-App-Pesquisa-Endereço)
 
 - Projeto que utiliza **HTTP REQUEST** via **XMLHttpRequest** com API's
+
+---
+
+### JQuery
+
+17. [Dashboard](/Projeto-17-Dashboard/)
+
+- Projeto de um dashboard que integra as tecnologias **AJAX** com **JQuery**.
+
+---
+
+### Arquitetura MVC
+
+18. [Projeto Miniframework](./minframework)
+
+- Projeto feito para testar os conhecimentos da arquitetura MVC, consiste em uma arquitetura de um site generico, fazendo o uso de banco de dados, routes, entre outras.
+**Models, View, Controller(MVC)**

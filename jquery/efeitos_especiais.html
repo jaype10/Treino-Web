@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+
+  <style>
+    button {
+      margin-bottom: 5px;
+      width: 100px;
+    }
+
+    .div {
+      width: 100px;
+      height: 100px;
+    }
+
+    .div1 {
+      background-color: red
+    }
+
+    .div2 {
+      background-color: green
+    }
+
+    .div3 {
+      background-color: blue
+    }
+
+    .grupo {
+      padding: 25px;
+      float: left
+    }
+
+    .div4 {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #000;
+      background-color: #aaa;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(() => {
+
+      $('#btn1').on('click', () => {
+        $('#div1').toggle('slow')
+      })
+
+      $('#btn2').on('click', () => {
+        $('#div2').fadeToggle(2000)
+      })
+
+      $('#btn3').on('click', () => {
+        $('#div3').slideToggle(2000)
+      })
+
+      let visualFinal = {
+        'width': '160px',
+        'height': '160px',
+        'margin-left': '200px',
+        'margin-top': '200px',
+        'border-radius': '25px'
+      }
+
+      $('#btn4').on('click', () => {
+        $('#div4').animate(
+          visualFinal,
+          {
+            duration: 3500,
+            start: () => {console.log('animação iniciada')},
+            complete: () => {
+              $('#div5').animate(
+                visualFinal,
+                'fast'
+              )
+            }
+          })
+      })
+
+    })
+  </script>
+</head>
+
+<body>
+
+  <div class="grupo">
+    <button type="button" id="btn1">DIV 1</button>
+    <div id="div1" class="div div1"></div>
+  </div>
+
+  <div class="grupo">
+    <button type="button" id="btn2">DIV 2</button>
+    <div id="div2" class="div div2"></div>
+  </div>
+
+  <div class="grupo">
+    <button type="button" id="btn3">DIV 3</button>
+    <div id="div3" class="div div3"></div>
+  </div>
+
+  <button type="button" id="btn4">Iniciar animação</button>
+  <div class="div4" id="div4"></div>
+
+  <div class="div4" id="div5"></div>
+
+</body>
+
+</html>
