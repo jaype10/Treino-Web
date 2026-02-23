@@ -1,0 +1,114 @@
+<html>
+
+<body>
+  <div id="teste"></div>
+  <script>
+    //---------------------------Aula Generators parte 1--------------------------------
+    //function* testeGenerator() {
+    //  //console.log('Teste 1')
+    //  //yield console.log('Teste 2')
+    //  //console.log('Teste 3')
+    //  yield 'Teste 1'
+    //  yield 'Teste 2'
+    //  yield 'Teste 3'
+
+    //  return "Teste 4"
+    //}
+
+    //let meuGenerator = testeGenerator() // objeto interator
+    ////console.log(meuGenerator)
+
+    ////meuGenerator.next()
+    ////console.log("---------")
+    ////meuGenerator.next()
+    ////console.log("---------")
+    ////meuGenerator.next()
+    ////console.log("---------")
+    ////meuGenerator.next()
+    //console.log(meuGenerator.next())
+    //console.log("---------")
+    //console.log(meuGenerator.next())
+    //console.log("---------")
+    //console.log(meuGenerator.next())
+    //console.log("---------")
+    //console.log(meuGenerator.next())
+    //console.log("---------")
+
+    //----------------------------------------------------------------------------------
+
+    //---------------------------Aula Generators parte 2--------------------------------
+    function* conversar() {
+      //escopo próprio
+      // opcao
+      // 1 bloco
+      let opcao = yield 'Eae, tudo bem?'
+
+      // 2 bloco
+      // o parâmetro enviado no next
+      //console.log(opcao)
+      if (opcao == 'sim' || opcao == 'Sim') {
+        yield 'Ótimo, fico feliz!'
+
+        opcao = yield 'Como eu posso te ajudar? Quer uma piada para começar?'
+
+        if (opcao == 'sim' || opcao == 'Sim') {
+          fetch('dados/piadas.json')
+            .then(resposta => resposta.json())
+            .then(piadas => {
+              let idx = Math.floor(Math.random() * 10)
+              idx = idx < 0 ? 0 : idx
+              let piada = piadas[idx]
+
+              console.log(piada.piada)
+              setTimout(() => {
+                console.log(piada.resposta)
+                console.log('kkkkkkkkkk muito boa né!')
+              }, 4000)
+            })
+
+          yield 'Digite 1 para compras, 2 para vendas ou 3 para falar com um atendente'
+
+        } else {
+          yield 'Digite 1 para compras, 2 para vendas ou 3 para falar com um atendente'
+        }
+        //console.log(opcao)
+        //yield 'Teste até esse ponto'
+      } else {
+        yield 'Respire fundo e tenha paciência'
+
+        yield 'Digite 1 para compras, 2 para vendas ou 3 para falar com um atendente'
+      }
+
+      yield 'Atendimento finalizado'
+
+      //yield 'Terceira etapa: ' + opcao
+      //yield 'Quarta etapa: ' + opcao
+      //yield 'Quinta etapa: ' + opcao
+    }
+
+    let conversa = conversar() //objeto interator
+
+    function acao() {
+      let resposta = document.getElementById('resposta').value
+      let iteracao = conversa.next(resposta)
+      console.log(iteracao)
+
+      if (iteracao.done) {
+        document.getElementById('teste').style.display = 'none'
+      }
+
+      //iteracao = conversa.next('sim')
+      //console.log(iteracao)
+
+      // iteracao = conversa.next('')
+      // console.log(iteracao)
+    }
+
+  </script>
+  <div id="teste">
+    <button type="button" onclick="acao()">Avançar</button>
+    Resposta: <input type="text" id="resposta">
+  </div>
+</body>
+
+</html>
