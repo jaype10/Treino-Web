@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weak Map</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+</body>
+<script>
+
+  // --------------------Aula 1 ----------------------------------------
+  obj1 = {
+    nome: "John Doe",
+    profissão: "Programador Sênior"
+  }
+
+  obj2 = {
+    nome: "Maria Silva",
+    profissão: "CEO"
+  }
+
+  // WeakMap -> Referência e Vazamento de Memória
+
+  const objetos = [obj1, obj2]; // Referência
+
+  console.log("Original");
+  objetos.map((value, index) => console.log(index, value));
+
+  obj2 = null;
+  //obj2.nome = "Jorge Sant Ana";
+  objetos[1].nome = "Jorge Sant Ana"; // Vazamento de Memória
+
+  console.log("Resultado");
+  objetos.map((value, index) => console.log(index, value));
+
+  // --------------------Aula 2 ----------------------------------------
+  obj1 = {
+    nome: "John Doe",
+    profissão: "Programador Sênior"
+  }
+
+  obj2 = {
+    nome: "Maria Silva",
+    profissão: "CEO"
+  }
+  // Coleção WeakMap
+  const objetos = new WeakMap();
+
+  objetos.set(obj1, "Informações do objeto 1");
+  objetos.set(obj2, "Informações do objeto 2");
+
+  // Não podemos percorrer esse WeakMap
+  console.log(objetos);
+
+  obj1 = null;
+
+  console.log(objetos);
+</script>
+
+</html>

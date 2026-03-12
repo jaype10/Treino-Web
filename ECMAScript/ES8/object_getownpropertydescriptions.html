@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Object Values</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <script>
+    let objeto = {
+      nome: 'John Doe',
+      profissional: {
+        site: 'johndoe.com.br',
+        profissao: 'Programador'
+      },
+      hobbies: [
+        {id: 1, hobby: 'Fazer trilhas'},
+        {id: 2, hobby: 'Dormir'},
+      ],
+      pais: 'Brasil',
+    }
+
+    // descritores de propriedades
+    console.log(Object.getOwnPropertyDescriptors(objeto))
+
+    // ----
+    /*
+    // Descritor Writable: quando definido com o false, ele indica que o valor da propriedade não poderá ser modificada
+    Object.defineProperty(objeto, 'nome', {
+      value: 'John Doe',
+      writable: false
+    })
+
+    console.log(Object.getOwnPropertyDescriptors(objeto))
+*/
+
+    // ----
+    // Descritor Enumarable: quando definido com o false, a propriedade em questão não é exibida em laços de repetição 
+    /*
+    for (let propriedade in objeto) {
+      console.log(propriedade, objeto[propriedade])
+    }
+
+    Object.defineProperty(objeto, 'hobbies', {
+      enumarable: false
+    })
+
+    Object.defineProperty(objeto, 'profissional', {
+      enumarable: false
+    })
+
+    console.log(Object.getOwnPropertyDescriptors(objeto))
+    console.log('-------------------------------------')
+    for (let propriedade in objeto) {
+      console.log(propriedade, objeto[propriedade])
+    }
+    */
+
+    // ----
+    // Descritor Configurable: quando definido com o false, indica que a propriedade não pode ser deletada e também não podemos mais moficiar os descritores, exceto a mudança de writable para false
+    Object.defineProperty(objeto, 'pais', {
+      configurable: false
+    })
+    /*
+*/
+    console.log(Object.getOwnPropertyDescriptors(objeto))
+  </script>
+</body>
+
+</html>
