@@ -1,11 +1,57 @@
 <html>
-  <body></body>
+  <body>
+    <button type="" id="btnSaudacao">Saudação</button>
+    <hr>
+    <input type="text" name="" value="" id="cep" placeholder="CEP">
+    <button type="" id="btnCEP">Consultar CEP</button>
+  </body>
   <script type="module">
-  import {saudacao, getEnderecoByCEP} from './import/lib.mjs'
+  //-----------Aula 1----------------------------
+  // (estático) carregando o módulo antes da necessidade de utilizá-lo 
+  //import {saudacao, getEnderecoByCEP} from './import/lib.mjs'
 
+  /*
   console.log(saudacao())
 
   getEnderecoByCEP('25520171')
   .then(dados => console.log(dados))
+  */
+
+  //-----------Aula 2----------------------------
+  /*document.querySelector('#btnSaudacao').addEventListener('click', () => {
+    import('./import/lib.mjs') // promisse
+      .then(module => console.log(module.saudacao()))
+  })
+
+  document.querySelector('#btnCEP').addEventListener('click', () => {
+    let cep = document.querySelector('#cep').value
+
+    if(cep.lenght == 8) {
+      import('./import/lib2.mjs') // promisse
+        .then(module => {
+          module.getEnderecoByCEP(cep)
+           .then(dados => console.log(dados))
+        })
+    }
+  })
+  */
+
+  //-----------Aula 3----------------------------
+
+  document.querySelector('#btnSaudacao').addEventListener('click', async() => {
+    const modulo = await import('./import/lib.mjs') // promisse
+      .then(module => console.log(module.saudacao()))
+  })
+
+  document.querySelector('#btnCEP').addEventListener('click', async() => {
+    let cep = document.querySelector('#cep').value
+
+    if(cep.lenght == 8) {
+      let x = await import('./import/lib2.mjs') // promisse
+
+      x.getEnderecoByCEP(cep)
+        .then(dados => console.log(dados))
+    }
+  })
   </script>
 </html>
