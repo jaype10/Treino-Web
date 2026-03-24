@@ -1,0 +1,26 @@
+<html>
+  <body>
+    
+  </body>
+  <script>
+  class Funcionario{
+    departamento = 'RH';
+    salario = 5500.55;
+    _primeiroNome = 'John';
+    _ultimoNome = 'Doe';
+
+    #nomeCompleto() { //o '#' mostra pro codigo que o atributo é privado
+      return `${this._primeiroNome} ${this._ultimoNome}`;
+    }
+
+    showNome(){
+      return this.#nomeCompleto();
+    }
+  }
+
+  const funcionario = new Funcionario();
+  console.log(funcionario);
+  console.log(funcionario.showNome());
+  //console.log(funcionario.#nomeCompleto());
+  </script>
+</html>
