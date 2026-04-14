@@ -1,59 +1,67 @@
-# Anna Bella — Portfólio (projeto de exemplo)
+# 📷 Projeto Anna Bella (Landing Page)
 
-Breve projeto de vitrine/portfólio para uma modelo fictícia chamada **Anna Bella**. Foi criado como exercício didático do curso "Desenvolvimento Web" para demonstrar conhecimentos básicos em HTML5 e CSS3.
+> Um site institucional de portfólio desenvolvido para praticar conceitos fundamentais de Web Design, estruturação HTML5 semântica e estilização CSS3.
 
-## Tecnologias
+![GitHub repo size](https://img.shields.io/github/repo-size/jaype10/Treino-Web?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-- HTML5
-- CSS3 (folha de estilos própria, sem frameworks)
+## 📌 Sobre o Projeto
 
-## O que este projeto demonstra
+O site **Anna Bella** é um projeto focado na criação de uma interface elegante e funcional para modelos ou profissionais da moda. O objetivo principal foi consolidar o domínio sobre o modelo de caixa (Box Model), posicionamento de elementos e a criação de uma navegação fluida entre páginas estáticas.
 
-- Estrutura semântica com páginas HTML: `index.html`, `biografia.html`, `campanha.html`, `contato.html`.
-- Uso de seletores CSS, classes e IDs para estilização.
-- Controle de tipografia (tamanhos, pesos e estilos), cores, bordas e imagens de fundo.
-- Organização simples de assets estáticos em `Img/`.
+### ⚙️ Funcionalidades e Conceitos Aplicados:
+- **Estruturação Semântica:** Uso correto de tags HTML5 (`header`, `nav`, `main`, `footer`) para melhor SEO e acessibilidade.
+- **Estilização com CSS Interno/Externo:** Gerenciamento de cores, fontes customizadas e espaçamentos.
+- **Layout Fixo e Centralizado:** Aplicação de técnicas de centralização de containers e controle de larguras máximas.
+- **Navegação Simples:** Linkagem entre múltiplas páginas (`index.html`, `biografia.html`, `campanhas.html`, `contato.html`) mantendo a identidade visual consistente.
 
-## Como visualizar o projeto localmente
+## 🛠️ Tecnologias Utilizadas
 
-1. Abra o arquivo `index.html` diretamente no seu navegador (duplo-clique) OU
-2. Sirva o diretório localmente com um servidor HTTP simples (recomendado para evitar problemas com recursos vinculados). No terminal, dentro da pasta do projeto execute:
+- **HTML5:** Para a estrutura de conteúdo.
+- **CSS3:** Para toda a parte visual, incluindo bordas personalizadas, alinhamentos e tratamento de imagens.
+- **Google Fonts:** Integração de tipografia para garantir um visual profissional.
 
-```bash
-# usando Python 3
-python3 -m http.server 8000
+## 📂 Estrutura do Projeto
 
-# abra http://localhost:8000 no navegador
+```text
+Projeto-2-Anna-Bella/
+├── index.html          # Página inicial (Home)
+├── biografia.html      # História e perfil
+├── campanhas.html      # Portfólio de trabalhos
+├── contato.html        # Informações de contato
+├── estilo.css          # Folha de estilo centralizada
+└── imagens/            # Assets visuais do projeto
 ```
+## 🚀 Como Executar
 
-## Estrutura de arquivos (resumida)
+Este é um projeto estático, portanto não requer servidor backend.
 
-- `index.html` — página inicial/vitrine
-- `biografia.html` — página com informações biográficas
-- `campanha.html` — galeria / imagens de campanhas
-- `contato.html` — formulário ou informações de contato
-- `style.css` — estilos principais do site
-- `Img/` — imagens usadas no projeto
-- `README.md` — este arquivo
+1. Clone o repositório:
+    ```Bash
 
-## Personalização
+    git clone [https://github.com/jaype10/Treino-Web.git](https://github.com/jaype10/Treino-Web.git)
+    ```
 
-- Para trocar imagens, substitua os arquivos dentro de `Img/` e atualize os caminhos nas páginas HTML.
-- Para ajustes de layout e cores, edite `style.css`.
+2. Navegue até a pasta:
+    ```Bash
 
-## Contribuição
+    cd Treino-Web/Projeto-2-Anna-Bella
+    ```
 
-Este é um projeto de exemplo/estudo; sugestões de melhorias são bem-vindas. Para contribuir, envie sugestões de alteração por mensagem ou copie o projeto e aplique suas modificações localmente.
+3. Abra o arquivo `index.html` em seu navegador.
 
-## Créditos e autoria
+## 🎨 Destaque de Design
 
-Desenvolvido como exercício do curso "Desenvolvimento Web Completo". Arquivos e conteúdo pertencem ao autor do repositório.
+O projeto utiliza uma paleta de cores sóbria e bordas sólidas que delimitam o conteúdo, uma técnica clássica para criar foco no portfólio de imagens:
+```CSS
 
-## Licença
-
-Sem licença especificada. Caso queira adicionar uma licença permissiva (ex: MIT), posso ajudar a adicionar o arquivo `LICENSE`.
-
-## Contato
-
-Se quiser que eu refine o projeto (ex.: adicionar responsividade, melhorar imagens ou traduzir), diga o que prefere e eu implemento.
-
+/* Exemplo de estilização do container principal */
+#principal {
+    width: 900px;
+    background-color: #f1eeed;
+    margin: 10px auto;
+    padding: 10px;
+    border: 3px solid #e1dcd9;
+}
+``
