@@ -1,33 +1,69 @@
-# Slim Framework 3 Skeleton Application
+# 📦 API de Produtos (PHP REST API)
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
+> Uma API RESTful desenvolvida em PHP puro para fornecer dados de produtos em formato JSON, simulando um serviço de backend para integração com aplicações externas.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+![GitHub repo size](https://img.shields.io/github/repo-size/jaype10/Treino-Web?style=for-the-badge)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![JSON](https://img.shields.io/badge/Format-JSON-lightgrey?style=for-the-badge&logo=json)
+![Postman](https://img.shields.io/badge/Tools-Postman-FF6C37?style=for-the-badge&logo=postman)
 
-## Install the Application
+## 📌 Sobre o Projeto
 
-Run this command from the directory in which you want to install your new Slim Framework application.
+O **Projeto 20** foca na entrega de dados (Data Delivery). Em vez de renderizar HTML, o servidor processa as informações e as devolve em um formato agnóstico (JSON), permitindo que qualquer cliente (React, Vue, Flutter ou mesmo um script Python) consuma essas informações.
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
+### ⚙️ Funcionalidades e Conceitos Aplicados:
+- **Endpoints REST:** Estruturação de rotas para acesso aos recursos de produtos.
+- **Manipulação de Cabeçalhos (Headers):** Uso da função `header('Content-Type: application/json')` para informar ao cliente o formato da resposta.
+- **Interação com Banco de Dados:** Uso de PDO para buscar registros de forma segura.
+- **Serialização de Dados:** Transformação de arrays e objetos PHP em strings JSON via `json_encode`.
+- **CORS (Cross-Origin Resource Sharing):** Noções de permissão para que domínios diferentes possam realizar requisições à API.
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+## 🛠️ Tecnologias Utilizadas
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
+- **PHP 8+**
+- **PDO (MySQL):** Para gestão e recuperação dos dados de produtos.
+- **JSON:** Formato de intercâmbio de dados.
+- **Postman/Insomnia:** (Recomendado) Para testes de endpoints.
 
-To run the application in development, you can run these commands 
+## 📂 Estrutura do Projeto
 
-	cd [my-app-name]
-	php composer.phar start
-	
-Or you can use `docker-compose` to run the app with `docker`, so you can run these commands:
+```text
+Projeto-20-API-de-Produtos/
+├── index.php           # Ponto de entrada que retorna a lista de produtos
+├── db_connect.php      # Configuração da conexão com o banco de dados
+├── Produto.php         # Classe de modelo para representação do objeto
+└── produtos.sql        # Script para criação da tabela e carga de dados
+```
+## 🚀 Como Executar
 
-         cd [my-app-name]
-	 docker-compose up -d
-After that, open `http://0.0.0.0:8080` in your browser.
+1. Clone o repositório.
 
-Run this command in the application directory to run the test suite
+2. Configure seu banco de dados MySQL e execute o arquivo `.sql`.
 
-	php composer.phar test
+3. Ajuste as credenciais em `db_connect.php`.
 
-That's it! Now go build something cool.
+4. Inicie o servidor PHP:
+    ```Bash
+
+    php -S localhost:8080
+    ```
+
+5. Acesse `http://localhost:8080` para ver a resposta em JSON.
+
+## 🧠 Destaque Técnico: Resposta da API
+
+O diferencial deste projeto é a entrega limpa de dados, essencial para arquiteturas modernas de microsserviços:
+```PHP
+
+// Exemplo de como a API entrega os dados
+header('Content-Type: application/json');
+
+$produtos = $query->fetchAll(PDO::FETCH_ASSOC);
+
+if ($produtos) {
+    echo json_encode($produtos);
+} else {
+    http_response_code(404);
+    echo json_encode(["erro" => "Nenhum produto encontrado"]);
+}
+``
