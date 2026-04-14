@@ -1,124 +1,69 @@
-# Treino-Web
+# 🚀 Trilha de Desenvolvimento Web Full Stack
 
-Repositório para projetos sugeridos pelo curso **"Domine Web - 20 Cursos - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP, OO, MySQL, JQuery, MVC, APIs, IONIC e muito mais"**.
-No curso são ensinados os diversos conceitos de linguagens web para que o estudante tenha conhecimento sobre o desenvolvimento web, desde o front-end até o Back-end, tornando-o um profissional qualificado para o mercado de trabalho.
+> Este repositório é um registro detalhado da minha evolução técnica como Desenvolvedor Full Stack, contendo projetos que abrangem desde os fundamentos da Web até arquiteturas complexas de software.
 
-## PROJETOS
+![GitHub repo size](https://img.shields.io/github/repo-size/jaype10/Treino-Web?style=for-the-badge)
+![Main Technologies](https://img.shields.io/badge/Stack-PHP%20%7C%20Laravel%20%7C%20JS%20%7C%20MySQL-blue?style=for-the-badge)
 
-### Html
+## 📌 Visão Geral
 
-1. Primeiro projeto
-
-- Projeto de inicio do curso, utilizando-se apenas **HTML**.
-
-2. [Projeto-Unes](Projeto-UNES)
-
-- Projeto basico de **HTML5**, o projeto foi pensado em ser uma pagina de uma faculdade fictícia chamada UNES e é o segundo projeto do curso.
+O repositório está organizado cronologicamente. Ele reflete o domínio progressivo de tecnologias essenciais para a construção de aplicações robustas, escaláveis e visualmente refinadas.
 
 ---
 
-### CSS3
+## 🏗️ Projetos de Construção e Especialização (Fase 1)
 
-3. [Projeto Anna Bella](./Projeto-2-Anna-Bella)
+Nesta fase inicial, o foco foi o domínio da lógica de backend, manipulação de bancos de dados e integração assíncrona.
 
-- Projeto inicial de **HTML5** e **CSS3**. Esse projeto tem foco em ser uma página-portifolio de uma modelo também fictícia, aonde os links redirecionam para outras páginas como a página "Sobre.html" e "contato.html" além do CSS ser utilizado de maneira externa através do "**style.css**".
-
-4. [Projeto TecBlog](Projeto-3-Tecblog)
-
-- Blog de tecnologia
-- Projeto para fixar propriedades de **CSS3**.
-
-5. [Projeto Site de Notícias Cidade](Projeto-4-Site-de-Notícias-Cidade)
-
-- Site de notícias de uma cidade ficticia.
-- Projeto com foco em práticar e fixar propriedades **CSS3** consideradas como intermediarias.
-
-6. [Projeto Site Chalé Hotel](Projeto-5-Chale-Hotel)
-
-- Site/ landing page para um hotel ficticio.
-- Projeto pessoal para práticar e fixar propriedades do **CSS3** consideradas como intermediarias e avançadas.
-
-7. [Projeto Museu Nacional](Projeto-6-Museu-Nacional)
-
-- Site/Landing page de um museu nacional
-- Projeto pessoal para práticar outros recursos do **CSS3** e **HTML5** não utilizadas anteriormente, como o normalize CSS, flexbox, etc...
+* **[Projeto 19 - Twitter Clone](https://github.com/jaype10/Treino-Web/tree/main/Projeto-19-Twitterclone):** O auge técnico desta fase. Implementação de arquitetura **MVC**, relacionamentos N:N, criptografia e gerenciamento de sessões.
+* **[Projeto 17 - Dashboard Administrativo](https://github.com/jaype10/Treino-Web/tree/main/Projeto-17-Dashboard):** Consumo de dados via **AJAX** e KPIs dinâmicos.
+* **[Projeto 20 - API de Produtos](https://github.com/jaype10/Treino-Web/tree/main/Projeto-20-API-de-Produtos):** Desenvolvimento de endpoints REST para entrega de dados em JSON.
 
 ---
 
-### Bootstrap
+## 🔄 Ciclo de Refinamento e Atualização (Projetos 21+)
 
-8. [Projeto Finans](Projeto-7-Finans)
+> **Nota de Evolução:** A partir do **Projeto 21**, o repositório entra em uma fase de atualização técnica. Optei por revisitar conceitos fundamentais de UI/UX e Front-end moderno sob a ótica de um desenvolvedor Full Stack experiente. O objetivo foi aplicar padrões de design atuais e refinar a qualidade do código entregue no front-end.
 
-- Site/Landing page unica, com foco para uma empresa ficticia de finanças (Finans)
-- Pojeto pessoal para prática e fixar conteúdos **Bootstrap** e fazer uso do **Font Awesome** ensinados no curso.
-
-9. [Projeto Spotify](Projeto-8-Spotify)
-
-- Projeto como finalização da parte de **bootstrap** do curso.
-- Foi-se utilizado uma versão do site oficial do spotify como base para a realização da prática.Esse site foi feito apenas para fins educacionais.
+* **[Projeto 23 - Site Discord](https://github.com/jaype10/Treino-Web/tree/main/Projeto-23-Site-Discord):** Reconstrução de interface moderna focada em fidelidade visual.
+* **[Projeto 24 - Detalhes de Produtos](https://github.com/jaype10/Treino-Web/tree/main/Projeto-24-Detalhes-Produtos-Loja-Virtual):** Foco em conversão e hierarquia de informações para E-commerce.
+* **[Projeto 22 - Classificação de Animes](https://github.com/jaype10/Treino-Web/tree/main/Projeto-22-Classificacao-de-Animes):** Manipulação dinâmica de listas e componentes.
 
 ---
 
-### Javascript
+## 🏛️ Fundamentos e Design Clássico (Fase Base)
 
-10. [App Calculadora](Projeto-9-App-Calculadora)
+Projetos que solidificaram o conhecimento em HTML5, CSS3 e frameworks de layout.
 
-- Projeto inicial da sessão **Javascript** do curso.
-- Uma calculadora basica porém funcional.
-
-11. [App Game Mata Mosquito](Projeto-10-AppGame-Mata-Mosquito)
-
-- Game feito em **Javascript**.
+* **[Projeto 8 - Spotify Clone](https://github.com/jaype10/Treino-Web/tree/main/Projeto-8-Spotify):** Design imersivo com Bootstrap.
+* **[Projeto 7 - Finans](https://github.com/jaype10/Treino-Web/tree/main/Projeto-7-Finans):** Landing page focada em conversão (SaaS).
+* **[Projeto 4 - Notícias Cidade](https://github.com/jaype10/Treino-Web/tree/main/Projeto-4-Site-de-Noticias-Cidade):** Layouts complexos de múltiplas colunas.
+* **[Projeto UNES](https://github.com/jaype10/Treino-Web/tree/main/Projeto-UNES):** O alicerce da estrutura Web (HTML Puro).
 
 ---
 
-### ECMAScript 2015 (ES6) e OO
+## 🛠️ Tecnologias Dominadas
 
-12. [App Orçamento Pessoal](Projeto-11-App-Orçamento-Pessoal)
+### Backend
+- **Linguagem:** PHP (8.x)
+- **Frameworks:** Laravel (em projetos avançados)
+- **Arquitetura:** MVC, Programação Orientada a Objetos (POO)
+- **APIs:** Desenvolvimento de APIs RESTful e consumo de JSON
 
-- App para controle financeiro do usuário.
+### Frontend
+- **Core:** HTML5, CSS3 (Flexbox, Grid), JavaScript (ES6+)
+- **Frameworks:** Bootstrap 4/5
+- **Técnicas:** AJAX (Requisições assíncronas), Mobile-First, UI/UX Design
 
----
-
-### Linguagem de Programação PHP (Hypertext Preprocessor)
-
-13. [App Help Desk](Projeto-12-App-Help-Desk)
-
-- App para abertura e acompanhamento de suportes técnicos.
-
-14. [App Send Mail](Projeto-13-App-Send-Mail)
-
-- App para envio de e-mails.
-
----
-
-### Banco de Dados MySQL
-
-15. [Projeto Banco de Dados Loja Virtual](Projeto-14-Loja-Virtual)
-
-- Projeto feito para ser uma implementação de um banco de dados simples de uma loja virtual.
+### Banco de Dados & Infra
+- **DB:** MySQL (Queries complexas, Joins, Agregações)
+- **OS:** Linux (Arch/EndeavourOS) - Terminal-centric workflow
 
 ---
 
-### AJAX
+## 🚀 Como navegar neste repositório
 
-16. [Projeto Pesquisa Endereço](Projeto-15-App-Pesquisa-Endereço)
-
-- Projeto que utiliza **HTTP REQUEST** via **XMLHttpRequest** com API's
+Cada projeto possui seu próprio diretório com um `README.md` detalhado explicando as tecnologias específicas e os desafios superados. Sinta-se à vontade para explorar os códigos-fonte e os históricos de commits.
 
 ---
-
-### JQuery
-
-17. [Dashboard](/Projeto-17-Dashboard/)
-
-- Projeto de um dashboard que integra as tecnologias **AJAX** com **JQuery**.
-
----
-
-### Arquitetura MVC
-
-18. [Projeto Miniframework](./minframework)
-
-- Projeto feito para testar os conhecimentos da arquitetura MVC, consiste em uma arquitetura de um site generico, fazendo o uso de banco de dados, routes, entre outras.
-**Models, View, Controller(MVC)**
+Desenvolvido por **João Paulo** - *Full Stack Developer & Digital Games Graduate*
