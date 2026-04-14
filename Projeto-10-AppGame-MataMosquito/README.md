@@ -1,13 +1,13 @@
-🦟 Game Mata-Mosquito
+# 🦟 Game Mata-Mosquito
 
     Um jogo de agilidade desenvolvido em JavaScript puro que explora a manipulação dinâmica do DOM, controle de tempo e eventos de redimensionamento de janela.
 ---
-📌 Sobre o Projeto
+## 📌 Sobre o Projeto
 
 Este projeto faz parte do meu aprendizado em desenvolvimento web e foca na criação de uma engine de jogo simples rodando diretamente no navegador. O objetivo do jogador é eliminar os mosquitos que surgem aleatoriamente na tela antes que o tempo se esgote ou que ele perca suas 3 vidas.
 
 ---
-🕹️ Mecânicas Implementadas:
+## 🕹️ Mecânicas Implementadas:
 
     Cálculo de Área Dinâmica: O jogo detecta o tamanho da janela em tempo real para garantir que os elementos surjam apenas dentro da área visível.
 
@@ -19,7 +19,7 @@ Este projeto faz parte do meu aprendizado em desenvolvimento web e foca na cria�
 
 ---
 
-🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
     HTML5 & CSS3: Estruturação e estilização visual.
 
@@ -29,7 +29,7 @@ Este projeto faz parte do meu aprendizado em desenvolvimento web e foca na cria�
 
 ---
 
-📂 Estrutura de Arquivos
+## 📂 Estrutura de Arquivos
 Plaintext
 
 Projeto-10-AppGame-MataMosquito/
@@ -42,7 +42,7 @@ Projeto-10-AppGame-MataMosquito/
 
 ---
 
-🚀 Como Executar
+## 🚀 Como Executar
 
     Clone o repositório:
     Bash
@@ -58,7 +58,7 @@ Projeto-10-AppGame-MataMosquito/
 
 ---
 
-🧠 Lógica Destacada
+## 🧠 Lógica Destacada
 
 No arquivo jogo.js, o destaque vai para a função de posicionamento randômico, que evita que o elemento seja criado fora das bordas da tela devido ao seu próprio tamanho:
 JavaScript

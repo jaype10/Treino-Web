@@ -1,8 +1,8 @@
-💰 App Orçamento Pessoal
+# 💰 App Orçamento Pessoal
 
     Aplicação web para gestão financeira pessoal que utiliza armazenamento local para persistência de dados e uma lógica robusta de filtragem de registros.
 
-📌 Sobre o Projeto
+## 📌 Sobre o Projeto
 
 O Orçamento Pessoal permite que o usuário cadastre despesas categorizadas (alimentação, educação, lazer, etc.) e visualize esses dados de forma organizada. O grande diferencial técnico aqui é a implementação de um sistema de "banco de dados" simulado no navegador.
 ⚙️ Funcionalidades e Conceitos Aplicados:
@@ -17,7 +17,7 @@ O Orçamento Pessoal permite que o usuário cadastre despesas categorizadas (ali
 
     Feedback Visual: Uso de Modais do Bootstrap para confirmar sucesso ou erro nas operações.
 
-🛠 Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
     HTML5 & CSS3
 
@@ -27,7 +27,7 @@ O Orçamento Pessoal permite que o usuário cadastre despesas categorizadas (ali
 
     Font Awesome: Ícones para melhor experiência de usuário.
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 Plaintext
 
 Projeto-11-App-Orçamento-Pessoal/
@@ -37,7 +37,7 @@ Projeto-11-App-Orçamento-Pessoal/
 ├── estilo.css          # Ajustes finos de layout
 └── (assets)            # Imagens e bibliotecas externas
 
-🚀 Como Executar
+## 🚀 Como Executar
 
     Clone o repositório:
     Bash
@@ -51,7 +51,7 @@ Projeto-11-App-Orçamento-Pessoal/
 
     Abra o arquivo index.html no seu navegador.
 
-🧠 Destaque Técnico: A Lógica de Filtro
+## 🧠 Destaque Técnico: A Lógica de Filtro
 
 O trecho abaixo demonstra como a aplicação lida com múltiplos critérios de busca de forma elegante:
 JavaScript
