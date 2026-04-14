@@ -1,25 +1,69 @@
-# Projeto 11 - App Orçamento Pessoal
-Projeto feito em **JavaScript (ECMAscript 6)** 
-Consiste em um app web onde o usuário pode ter um controle financeiro do seu orçamento. Possibilitando o usuário a cadastrar despesas e consulta-las.
-O projeto não usa back-end, mas sim o recurso do navegador "storage" mais precisamente o "Local storage".
+💰 App Orçamento Pessoal
 
----
-Conteúdo visto/ utilizado para esse projeto
-<li>Babel</li>
-<li>Variáveis *Var* e *Let*</li>
-<li>Variável *CONST*</li>
-<li>Template string</li>
-<li>Funções</li>
-<li>Arrow functions</li>
-<li>Orientação a Objetos - OO</li>
-<li>OO - Pilar da Abstração</li>
-<li>OO - Pilar do Encapsulamento</li>
-<li>OO - Pilar da Herança</li>
-<li>Operador *Super*</li>
-<li>OO - Pilar do Polimorfismo</li>
-<li>Objetos literais/estáticos</li>
-<li>Funções construtoras</li>
-<li>Funções Factory</li>
-<li>Prototype</li>
-<li>Operador Rest/Spread</li>
-<li>Destructuring Assignment</li>
+    Aplicação web para gestão financeira pessoal que utiliza armazenamento local para persistência de dados e uma lógica robusta de filtragem de registros.
+
+📌 Sobre o Projeto
+
+O Orçamento Pessoal permite que o usuário cadastre despesas categorizadas (alimentação, educação, lazer, etc.) e visualize esses dados de forma organizada. O grande diferencial técnico aqui é a implementação de um sistema de "banco de dados" simulado no navegador.
+⚙️ Funcionalidades e Conceitos Aplicados:
+
+    Persistência com LocalStorage: Os dados não se perdem ao atualizar a página, utilizando uma camada de abstração (classe Bd) para gerenciar o JSON.
+
+    Programação Orientada a Objetos (POO): Uso de classes JavaScript para representar Despesas e a lógica de banco de dados.
+
+    Validação de Dados: Sistema que verifica se todos os campos obrigatórios foram preenchidos antes da gravação.
+
+    Filtros Inteligentes: Motor de busca que permite filtrar despesas por ano, mês, dia, tipo ou descrição de forma combinada.
+
+    Feedback Visual: Uso de Modais do Bootstrap para confirmar sucesso ou erro nas operações.
+
+🛠 Tecnologias Utilizadas
+
+    HTML5 & CSS3
+
+    JavaScript ES6+: (Classes, Arrow Functions, LocalStorage, Array Methods como filter).
+
+    Bootstrap 4: Design responsivo e componentes de interface.
+
+    Font Awesome: Ícones para melhor experiência de usuário.
+
+📂 Estrutura do Projeto
+Plaintext
+
+Projeto-11-App-Orçamento-Pessoal/
+├── index.html          # Cadastro de novas despesas
+├── consulta.html       # Visualização e filtragem de registros
+├── app.js              # Lógica core (Classes Despesa e Bd)
+├── estilo.css          # Ajustes finos de layout
+└── (assets)            # Imagens e bibliotecas externas
+
+🚀 Como Executar
+
+    Clone o repositório:
+    Bash
+
+    git clone https://github.com/jaype10/Treino-Web.git
+
+    Navegue até a pasta:
+    Bash
+
+    cd Treino-Web/Projeto-11-App-Orçamento-Pessoal
+
+    Abra o arquivo index.html no seu navegador.
+
+🧠 Destaque Técnico: A Lógica de Filtro
+
+O trecho abaixo demonstra como a aplicação lida com múltiplos critérios de busca de forma elegante:
+JavaScript
+
+// Exemplo da lógica de filtragem dinâmica
+pesquisar(despesa) {
+    let despesasFiltradas = Array()
+    despesasFiltradas = this.recuperarTodosRegistros()
+
+    if(despesa.ano != '') {
+        despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
+    }
+    // ... repete para os demais campos
+    return despesasFiltradas
+}
